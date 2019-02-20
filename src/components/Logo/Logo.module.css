@@ -1,7 +1,7 @@
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .img {
@@ -18,10 +18,12 @@
     font-size: 20px;
     font-weight: 200;
     margin: 0;
+    line-height: 20px;
 }
 
 .name__headerBold {
     font-weight: 900;
+    line-height: 20px;
 }
 
 .name__subTitle {
@@ -30,6 +32,7 @@
     font-weight: 400;
     letter-spacing: 4px;
     margin: 0;
+    line-height: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -40,6 +43,7 @@
 
     .name__header {
         font-size: 30px;
+        line-height: 30px;
     }
 
     .name__subTitle {

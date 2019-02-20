@@ -8,13 +8,13 @@ const Menu = (props) => {
         <div className={menuClasses.join(' ')}>
             <ul className={styles.list}>
                 <li className={styles.item}>
-                    O nas
+                    o nas
                 </li>
                 <li className={styles.item}>
-                    Oferta
+                    oferta
                 </li>
                 <li className={styles.item}>
-                    Kontakt
+                    kontakt
                 </li>
             </ul>
         </div>

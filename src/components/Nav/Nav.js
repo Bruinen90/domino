@@ -15,15 +15,25 @@ class Nav extends Component {
     render() {
         return (
             <div className={styles.container}>
-                <Logo />
-                <Toggler
-                    click={this.toggleHandler}
-                    active={this.state.show}
-                />
-                <Menu
-                    click={this.toggleHandler}
-                    show={this.state.show}
-                />
+                <div className={styles.navCont}>
+                    <div className={styles.logoCont}>
+                        <Logo />
+                    </div>
+                    <div className={styles.lineCont}>
+                        <div className={styles.line}></div>
+                    </div>
+                    <Toggler
+                        click={this.toggleHandler}
+                        active={this.state.show}
+                    />
+                    <div className={styles.menuCont}>
+                        <Menu
+                            click={this.toggleHandler}
+                            show={this.state.show}
+                        />    
+                    </div>
+                </div>
+
             </div>
         );
     }
