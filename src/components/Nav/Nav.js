@@ -14,26 +14,33 @@ class Nav extends Component {
     }
     render() {
         return (
-            <div className={styles.container}>
-                <div className={styles.navCont}>
-                    <div className={styles.logoCont}>
-                        <Logo />
-                    </div>
-                    <div className={styles.lineCont}>
-                        <div className={styles.line}></div>
-                    </div>
-                    <Toggler
-                        click={this.toggleHandler}
-                        active={this.state.show}
-                    />
-                    <div className={styles.menuCont}>
-                        <Menu
+            <div className={styles.wrapper}>
+                <div className={styles.container}>
+                    <div className={styles.navCont}>
+                        <div className={styles.logoCont}>
+                            <Logo />
+                        </div>
+                        <div className={styles.lineCont}>
+                            <div className={styles.line}></div>
+                        </div>
+                        <div className={styles.menuCont}>
+                            <Menu
+                                click={this.toggleHandler}
+                                show={this.state.show}
+                            />
+                        </div>
+                        <Toggler
                             click={this.toggleHandler}
-                            show={this.state.show}
-                        />    
+                            active={this.state.show}
+                        />
+                    </div>
+                    <div className={styles.telCont}>
+                        <div className={styles.wideLine}></div>
+                        <div className={styles.phone}>
+                            TEL. 796 720 034
+                        </div>
                     </div>
                 </div>
-
             </div>
         );
     }

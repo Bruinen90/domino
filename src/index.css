@@ -1,6 +1,11 @@
+:root {
+    --color-main: #17105e;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: #ccc;
   font-family: 'Lekton', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8,6 +13,10 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
 }
 
 code {

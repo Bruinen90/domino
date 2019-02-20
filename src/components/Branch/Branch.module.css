@@ -1,0 +1,113 @@
+.container {
+    background-color: #17105e;
+    max-height: 100%;
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+    flex: 1;
+    margin: 0;
+    transition: all .2s ease-in;
+}
+
+.container:hover {
+    max-width: 100%;
+}
+
+.container:hover > .buttonCont {
+    max-width: 100%;
+    opacity: 1;
+    transition: opacity .2s .2s linear, max-width 0s .2s;
+}
+
+.container:nth-child(2n) {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.container:nth-child(2n+1) {
+    align-self: flex-start;
+}
+
+.buttonCont {
+    width: 50%;
+    max-width: 0%;
+    opacity: 0;
+    transition: none;
+}
+
+.container:nth-child(2n):hover .default {
+    padding-left: 20px;
+}
+
+.default {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: bold;
+    width: 50px;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: auto;
+        width: 100%;
+        height: 200px;
+        max-height: 110px;
+        padding: 20px 30px;
+        padding-top: 40px;
+        margin: 0 15px;
+        flex-direction: column !important;
+        align-self: flex-end !important;
+    }
+
+    .container:hover {
+        max-height: 200px;
+        padding-bottom: 0;
+        justify-content: space-between;
+    }
+
+    .container:hover > .buttonCont {
+        max-height: 100%;
+        opacity: 1;
+        transition: opacity .2s .2s linear, max-height 0s .2s;
+    }
+
+    .default {
+        flex: 0 1 auto;
+        padding: 0 !important;
+    }
+
+    .buttonCont {
+        width: 100%;
+        max-height: 0px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 30px;
+    }
+
+    .description {
+        font-size: 20px;
+        width: 100px;
+    }
+}

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .img {
@@ -16,23 +17,23 @@
 
 .name__header {
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 300;
     margin: 0;
-    line-height: 20px;
+    line-height: 1em;
 }
 
 .name__headerBold {
-    font-weight: 900;
+    font-weight: 800;
     line-height: 20px;
 }
 
 .name__subTitle {
     text-transform: uppercase;
     font-size: 10px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 4px;
     margin: 0;
-    line-height: 1rem;
+    line-height: 1em;
 }
 
 @media (min-width: 768px) {
