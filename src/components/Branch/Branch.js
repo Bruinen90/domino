@@ -8,7 +8,7 @@ const Branch = (props) => {
     const contClasses = [styles.container];
     if(props.clicked) { contClasses.push(styles.active) };
     if(props.light) { contClasses.push(styles.light)};
-    let icon = iconLight;
+    let icon = !props.light ? iconLight : iconDark;
     // props.dark ? icon = iconLight : icon = iconDark;
     return(
         <div className={contClasses.join(' ')}>

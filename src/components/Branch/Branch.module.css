@@ -1,9 +1,11 @@
 .container {
-    background-color: #17105e;
+    background-color: var(--color-main-transparent);
     max-height: 100%;
+    height: 50%;
     width: 100%;
     max-width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 15px;
@@ -13,34 +15,23 @@
     transition: all .2s ease-in;
 }
 
+.light {
+    background-image: var(--gradient);
+    color: var(--color-main);
+}
+
 .container:hover {
-    max-width: 100%;
+    justify-content: space-around;
 }
 
 .container:hover > .buttonCont {
-    max-width: 100%;
+    max-height: 100%;
     opacity: 1;
     transition: opacity .2s .2s linear, max-width 0s .2s;
 }
 
-.container:nth-child(2n) {
-    align-self: flex-end;
-    flex-direction: row-reverse;
-}
-
-.container:nth-child(2n+1) {
-    align-self: flex-start;
-}
-
 .buttonCont {
-    width: 50%;
-    max-width: 0%;
-    opacity: 0;
-    transition: none;
-}
-
-.container:nth-child(2n):hover .default {
-    padding-left: 20px;
+    display: none;
 }
 
 .default {
@@ -48,7 +39,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    flex: 1;
 }
 
 .icon {
@@ -74,8 +64,6 @@
         padding: 20px 30px;
         padding-top: 40px;
         margin: 0 15px;
-        flex-direction: column !important;
-        align-self: flex-end !important;
     }
 
     .container:hover {
@@ -96,8 +84,10 @@
     }
 
     .buttonCont {
+        display: block;
         width: 100%;
         max-height: 0px;
+        opacity: 0;
     }
 
     .icon {

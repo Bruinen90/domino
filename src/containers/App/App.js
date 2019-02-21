@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './App.module.css';
+// import styles from './App.module.css';
 import Nav from '../../components/Nav/Nav';
 import Home from '../Home/Home';
 import { Switch, Route } from 'react-router-dom';

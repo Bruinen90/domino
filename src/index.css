@@ -1,11 +1,13 @@
 :root {
     --color-main: #17105e;
+    --color-main-transparent: rgba(23, 16, 94, .6);
+    --gradient: linear-gradient(to right, #41eeee, #00b3f3);
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #ccc;
+  background-color: #FFF;
   font-family: 'Lekton', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
