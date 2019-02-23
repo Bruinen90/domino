@@ -19,12 +19,12 @@
 }
 
 .icon {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
 
 .number {
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 2px;
     position: relative;
     text-align: center;
@@ -56,7 +56,6 @@
 @media (min-width: 768px) {
     .container {
         height: 130px;
-        width: 150px;
     }
 
     .icon {
@@ -81,7 +80,6 @@
 @media (min-width: 1400px) {
     .container {
         height: 150px;
-        width: 170px;
     }
 
     .icon {

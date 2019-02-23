@@ -3,6 +3,7 @@ import styles from './Home.module.css';
 import Welcome from './Welcome/Welcome';
 import SymSlides from './SymSlides/SymSlides';
 import Challange from './Challange/Challange';
+import Customers from './Customers/Customers';
 
 const Home = (props) => {
     return(
@@ -10,6 +11,7 @@ const Home = (props) => {
             <Welcome />
             <SymSlides />
             <Challange />
+            <Customers />
         </React.Fragment>
     );
 };

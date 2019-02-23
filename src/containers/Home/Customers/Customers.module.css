@@ -1,0 +1,31 @@
+.container {
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20vh;
+}
+
+.gradientHeader {
+    font-size: 22px;
+    text-transform: uppercase;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1em;
+    width: 100%;
+}
+
+.sliderCont {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-left: 45px;
+    }
+
+    .gradientHeader {
+        font-size: 40px;
+    }
+}

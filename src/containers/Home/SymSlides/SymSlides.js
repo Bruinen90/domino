@@ -24,7 +24,7 @@ const SymSlides = (props) => {
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam iusto atque minima ipsum eligendi dolore molestiae, corporis omnis voluptas esse asperiores totam fugiat cumque temporibus animi ut, iste a recusandae.
                         </p>
                         <Button
-                            width={50}
+                            width={60}
                         />
                     </div>
                 </div>
