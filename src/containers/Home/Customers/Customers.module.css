@@ -2,7 +2,12 @@
     padding: 0px 15px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20vh;
+    margin: 10vh 0;
+}
+
+.headerCont {
+    display: flex;
+    position: relative;
 }
 
 .gradientHeader {
@@ -12,7 +17,17 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1em;
-    width: 100%;
+    width: 80%;
+    margin: 0;
+}
+
+.line {
+    width: 70%;
+    height: 2px;
+    background-image: var(--gradient);
+    position: absolute;
+    bottom: 5px;
+    right: 0;
 }
 
 .sliderCont {
@@ -23,9 +38,32 @@
 @media (min-width: 768px) {
     .container {
         padding-left: 45px;
+        position: relative;
+    }
+
+    .headerCont {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 40px;
+        width: 100%;
     }
 
     .gradientHeader {
         font-size: 40px;
+        width: 60%;
     }
+
+    .line {
+        position: static;
+        width: 80%;
+        background-image: none;
+        background-color: var(--color-main);
+        height: 2px;
+    }
+
+    .arrowsContDesktop {
+        width: 300px;
+    }
+
 }

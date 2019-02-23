@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Slider.module.css';
 import Logo from './Logo/Logo';
+import SliderIcons from './SliderIcons/SliderIcons';
 
 class Slider extends Component {
     state = {
@@ -15,7 +16,7 @@ class Slider extends Component {
                 this.setState({currSlide: 0})
             }
         }
-        this.slideShow = setInterval(()=>change(), 2000);
+        this.slideShow = setInterval(()=>change(), 4000);
     }
 
     changeSlide = (newSlideNo) => {
@@ -52,7 +53,6 @@ class Slider extends Component {
         })
 
         const sliderWidth = Math.ceil(this.props.compCount/this.props.logosPerSlide) * 100 + '%';
-        console.log(sliderWidth);
 
         const sliderStyle = {
             width: sliderWidth,
@@ -60,9 +60,28 @@ class Slider extends Component {
             // transform: `translateX(${(34*this.state.currSlide) - this.state.currSlide*window.innerWidth}px)`
         }
         return (
-            <div className={styles.container} style={sliderStyle}>
-                {logos}
-            </div>
+            <React.Fragment>
+                <div className={styles.container} style={sliderStyle}>
+                    {logos}
+                </div>
+                <div className={styles.iconsCont}>
+                    <SliderIcons
+                        active = {this.state.currSlide}
+                        count = {this.props.slidesCount}
+                        clickedIcon= {(i)=>this.changeSlide(i)}
+                    />
+                </div>
+                <div className={styles.arrowsCont}>
+                    <div
+                        className={[styles.arrow, styles.arrowLeft].join(' ')}
+                        onClick={()=>this.changeSlide(this.state.currSlide-1)}
+                    ></div>
+                    <div
+                        className={[styles.arrow, styles.arrowRight].join(' ')}
+                        onClick={()=>this.changeSlide(this.state.currSlide+1)}
+                    ></div>
+                </div>
+            </React.Fragment>
         );
     }
 }

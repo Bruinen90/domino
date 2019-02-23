@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.icon {
+    background-color: var(--color-main);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.active {
+    background-image: var(--gradient);
+    background-repeat: no-repeat;
+    transition: all .2s ease-in;
+    transform: scale(1.6);
+}
+
+@keyframes load {
+    to {
+        background-position: 0 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 50px;
+    }
+
+    .icon {
+        border-radius: 0;
+        height: 3px;
+        width: 100%;
+    }
+
+    .active {
+        background-position: -50px 0;
+        animation: load 4000ms ease-in;
+        transform: scale(1.2);
+    }
+}
