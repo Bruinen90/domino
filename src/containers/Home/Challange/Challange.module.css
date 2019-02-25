@@ -58,6 +58,7 @@
     .container {
         display: flex;
         position: relative;
+        margin-top: 120px;
     }
 
     .headerCont {

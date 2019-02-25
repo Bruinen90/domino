@@ -17,12 +17,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1em;
-    width: 80%;
     margin: 0;
 }
 
 .line {
-    width: 70%;
+    width: 65%;
     height: 2px;
     background-image: var(--gradient);
     position: absolute;

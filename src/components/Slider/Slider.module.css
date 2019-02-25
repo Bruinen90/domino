@@ -39,6 +39,11 @@
         align-items: center;
         padding: 0 7px;
         cursor: pointer;
+        transition: all .15s ease-in;
+    }
+
+    .arrow:hover {
+        transform: scale(1.1);
     }
 
     .arrowLeft::after {
@@ -46,12 +51,32 @@
         font-size: 10px;
     }
 
+    .arrowLeft:hover::after {
+        animation: pulseLeft .7s linear alternate infinite;
+    }
+
     .arrowRight::after {
         content: "▶";
         font-size: 10px;
     }
 
+    .arrowRight:hover::after {
+        animation: pulseRight .7s linear alternate infinite;
+    }
+
     .arrowRight {
         justify-content: flex-end;
+    }
+
+    @keyframes pulseLeft {
+        to {
+            transform: translateX(5px);
+        }
+    }
+
+    @keyframes pulseRight {
+        to {
+            transform: translateX(-5px);
+        }
     }
 }

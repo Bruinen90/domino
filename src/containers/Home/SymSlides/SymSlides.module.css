@@ -69,9 +69,6 @@
         grid-column-gap: 30px;
     }
 
-    .slide {
-    }
-
     .leftSlide {
         background-color: var(--color-main);
         display: flex;
@@ -99,7 +96,7 @@
     }
 
     .rightSlide {
-        padding: 55px 120px;
+        padding: 57px 120px;
         padding-bottom: 40px;
     }
 

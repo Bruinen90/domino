@@ -13,7 +13,7 @@ const Customers = (props) => {
             <div className={styles.container}>
                 <div className={styles.headerCont}>
                     <h2 className={styles.gradientHeader}>
-                        Do tej pory zaufali nam
+                        Do tej pory zaufali {window.innerWidth < 768 && <br/> }nam
                     </h2>
                     <div className={styles.line}></div>
                     <div className={styles.arrowsContDesktop}>

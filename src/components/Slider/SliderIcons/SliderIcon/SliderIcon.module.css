@@ -32,6 +32,10 @@
         width: 50px;
     }
 
+    .container:hover > .icon {
+        transform: scale(1.2)
+    }
+
     .icon {
         border-radius: 0;
         height: 3px;
@@ -40,7 +44,7 @@
 
     .active {
         background-position: -50px 0;
-        animation: load 4000ms ease-in;
+        animation: load 4000ms ease-out;
         transform: scale(1.2);
     }
 }
