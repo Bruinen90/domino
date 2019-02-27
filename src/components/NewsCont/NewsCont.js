@@ -12,7 +12,9 @@ const NewsCont = (props) => {
             </div>
             <div className={styles.footer}>
                 <div className={styles.line}></div>
-                <div className={styles.arrow}>▶</div>
+                <div className={styles.arrow}>
+                    <ion-icon name="arrow-dropright"></ion-icon>
+                </div>
             </div>
         </div>
     );

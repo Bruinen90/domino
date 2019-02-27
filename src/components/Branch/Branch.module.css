@@ -27,7 +27,7 @@
 .container:hover > .buttonCont {
     max-height: 100%;
     opacity: 1;
-    transition: opacity .2s .2s linear, max-width 0s .2s;
+    transition: opacity .2s .2s linear;
 }
 
 .buttonCont {
@@ -75,7 +75,8 @@
     .container:hover > .buttonCont {
         max-height: 100%;
         opacity: 1;
-        transition: opacity .2s .2s linear, max-height 0s .2s;
+        transform: scale(1);
+        transition: opacity .3s .2s linear, max-height 0s .2s;
     }
 
     .default {
@@ -86,6 +87,7 @@
     .buttonCont {
         display: block;
         width: 100%;
+        transform: scale(0);
         max-height: 0px;
         opacity: 0;
     }

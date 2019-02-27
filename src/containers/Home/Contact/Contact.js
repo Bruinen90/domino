@@ -33,6 +33,7 @@ const Contact = (props) => {
                         </a>
                         <div className={styles.line}></div>
                     </div>
+                    <div className={styles.map}></div>
                     <div className={styles.rec}>
                         <h2 className={styles.header}>Oferta</h2>
                         <ul className={styles.list}>
