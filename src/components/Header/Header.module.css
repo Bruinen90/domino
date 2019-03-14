@@ -1,0 +1,24 @@
+.container {
+    font-size: 46px;
+    text-transform: uppercase;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1em;
+    position: relative;
+    width: 100%;
+}
+
+.container::after {
+    content: " ";
+    background: var(--gradient);
+    height: 2px;
+    width: 76%;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+.text {
+    width: 22%;
+}

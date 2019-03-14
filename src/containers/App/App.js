@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import styles from './App.module.css';
 import Nav from '../../components/Nav/Nav';
 import Home from '../Home/Home';
+import Agency from '../Agency/Agency';
 import { Switch, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
                     <Nav />
                     <Switch>
                         <Route path='/' exact component={Home} />
+                        <Route path='/agency'  component={Agency} />
                         {/* <Route path='/products' exact component={Products} />
                         <Route path='/info' component={Info} />
                         <Route path='/cooperation' component={Cooperation} />
