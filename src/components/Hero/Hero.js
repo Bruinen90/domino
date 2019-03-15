@@ -10,14 +10,16 @@ const Hero = (props) => {
             className={styles.container}
             style={{
                 backgroundImage: `url(${background})`,
-                height: window.innerHeight < 769 ? window.innerHeight + 'px' :
+                height: window.innerWidth < 769 ? window.innerHeight + 'px' :
                         '80vh'
             }}
         >
             <PageContent>
-                <h1 className={styles.mainHeader}>
-                    {props.mainHeader}
-                </h1>
+                <div className={styles.headerCont}>
+                    <h1 className={styles.mainHeader}>
+                        {props.mainHeader}
+                    </h1>
+                </div>
                 <div className={styles.featuresCont}>
                     <FeaturesList
                         featuresData = {props.featuresList}

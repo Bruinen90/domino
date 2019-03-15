@@ -6,8 +6,8 @@ const Button = (props) => {
         width: props.width + '%',
     }
     return(
-        <div className={styles.container} style={style}>
-            Zobacz więcej
+        <div className={[styles.container, props.dark && styles.dark].join(' ')} style={style}>
+            {props.caption ? props.caption : 'Zobacz więcej'}
             <span className={styles.plus}>+</span>
         </div>
     );

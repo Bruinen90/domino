@@ -1,5 +1,5 @@
 .container {
-    font-size: 46px;
+    font-size: 24px;
     text-transform: uppercase;
     background: var(--gradient);
     -webkit-background-clip: text;
@@ -7,18 +7,33 @@
     line-height: 1em;
     position: relative;
     width: 100%;
+    padding: 0px 15px;
 }
 
 .container::after {
     content: " ";
     background: var(--gradient);
     height: 2px;
-    width: 76%;
+    width: calc(50% - 15px);
     position: absolute;
-    right: 0;
+    right: 15px;
     bottom: 5px;
 }
 
 .text {
-    width: 22%;
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        font-size: 46px;
+    }
+
+    .container::after {
+        width: 76%;
+    }
+
+    .text {
+        width: 22%;
+    }
 }

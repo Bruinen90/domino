@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    grid-template: auto / 1fr;
+    grid-gap: 30px;
+    padding: 15px;
+}
+
+.photo {
+    width: 100%;
+    min-height: 460px;
+    background-color: #999;
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    }
+
+    .centerCol {
+        background-color: #ccc;
+        min-height: 250px;
+        margin-bottom: calc(25% + 60px);
+    }
+
+    .moveUp {
+        margin-top: calc(-25% - 60px);
+        margin-bottom: calc(50% + 60px);
+    }
+}

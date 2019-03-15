@@ -5,20 +5,25 @@
     background-repeat: no-repeat;
     padding-top: 60px;
     position: relative;
-    z-index: -1;
+    z-index: 0;
     margin-bottom: 120px;
 }
 
-.mainHeader {
-    color: #fff;
-    font-size: 30px;
+.headerCont {
     text-transform: uppercase;
+    color: #fff;
+    padding: 0 8%;
+    padding-bottom: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    color: #fff;
+}
+
+.mainHeader {
+    font-size: 30px;
     line-height: 1em;
-    z-index: 2;
-    position: absolute;
-    top: 30%;
-    left: 0;
-    padding: 30px;
 }
 
 .featuresCont {
@@ -31,14 +36,18 @@
 }
 
 @media (min-width: 768px) {
+    .headerCont {
+        width: 70%;
+        padding-bottom: 0;
+    }
+
     .mainHeader {
-        font-size: 72px;
-        width: 50%;
-        padding: 0;
+        font-size: 8vh;
     }
 
     .featuresCont {
-        height: 120px;
-        bottom: -60px;
+        height: 100px;
+        bottom: -50px;
+        padding: 0 15px;
     }
 }
