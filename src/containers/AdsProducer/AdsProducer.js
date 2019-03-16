@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Agency.module.css';
+import styles from './AdsProducer.module.css';
 import Hero from '../../components/Hero/Hero';
 import PageContent from '../PageContent/PageContent';
 import Header from '../../components/Header/Header';
@@ -9,53 +9,43 @@ import PhotosGrid from '../../components/PhotosGrid/PhotosGrid';
 import OfferLinks from '../../components/OfferLinks/OfferLinks';
 import Contact from '../../components/Contact/Contact';
 
-const Agency = (props) => {
+const AdsProducer = (props) => {
     const gridItems = [
         {
-            title: "Druk wielkoformatowy",
+            title: "Konstrukcje reklamowe",
             text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?"
         },
         {
-            title: "Druk UV, cyfrowy",
+            title: "Reklamy świetlne",
             text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?"
         },
         {
-            title: "Druk offsetowy",
+            title: "Litery przestrzenne",
             text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?"
         },
         {
-            title: "Matriały reklamowe ",
+            title: "Znakowanie obiektów",
             text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?"
         },
         {
-            title: "Gadżety reklamowe",
-            text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?"
-        },
-    ]
-    const lightGridItems = [
-        {
-            title: "Marketing online",
+            title: "Materiały pos",
             text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?"
         },
         {
-            title: "Branding care",
-            text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?"
-        },
-        {
-            title: "Projektowanie graficzne",
+            title: "Stoiska wystawiennicze",
             text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?"
         },
     ]
     return(
         <div className={styles.container}>
             <Hero
-                mainHeader = "Agencja reklamowa 360°"
+                mainHeader = "Producent reklam wysoka jakość"
                 lightTitle = "Jak działamy?"
                 featuresList = {['projekt', 'akceptacja', 'realizacja']}
             />
             <PageContent>
                 <Header
-                    text = "Od projektu po realizacje"
+                    text = "Od projektu do montażu"
                 />
                 <TextWithButton
                     text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta temporibus suscipit facere, inventore, laudantium porro! Molestiae maiores, dignissimos id neque. Esse aliquid at voluptatem a, sapiente dicta dignissimos velit nemo culpa tempore aspernatur neque, quasi, mollitia fuga perferendis! Quo dicta necessitatibus ducimus temporibus, sint omnis natus officia unde reiciendis provident!"
@@ -64,20 +54,16 @@ const Agency = (props) => {
                 <OfferGrid
                     gridItems = {gridItems}
                 />
-                <OfferGrid
-                    gridItems = {lightGridItems}
-                    light = {true}
-                />
 
                 <Header
                     text = "Wybrane realizacje"
                 />
                 <PhotosGrid
-                    folderName= "agency"
+                    folderName= "AdsProducer"
                     photosCount = {6}
                 />
                 <OfferLinks
-                    active = "agencja_reklamowa"
+                    active = "producent_reklam"
                 />
                 <Contact />
             </PageContent>
@@ -85,4 +71,4 @@ const Agency = (props) => {
     );
 };
 
-export default Agency;
+export default AdsProducer;

@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import Nav from '../../components/Nav/Nav';
 import Home from '../Home/Home';
 import Agency from '../Agency/Agency';
+import Mounting from '../Mounting/Mounting';
+import AdsProducer from '../AdsProducer/AdsProducer';
+import About from '../About/About';
 import { Switch, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -12,13 +15,10 @@ class App extends Component {
                     <Nav />
                     <Switch>
                         <Route path='/' exact component={Home} />
-                        <Route path='/agency'  component={Agency} />
-                        {/* <Route path='/products' exact component={Products} />
-                        <Route path='/info' component={Info} />
-                        <Route path='/cooperation' component={Cooperation} />
-                        <Route path='/about' component={About} />
-                        <Route path='/contact' component={Contact} />
-                        {allProducts} */}
+                        <Route path='/agencja_reklamowa'  component={Agency} />
+                        <Route path='/montaz_reklam'  component={Mounting} />
+                        <Route path='/producent_reklam'  component={AdsProducer} />
+                        <Route path='/o_nas'  component={About} />
                     </Switch>
             </main>
         );

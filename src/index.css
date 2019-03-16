@@ -1,6 +1,7 @@
 :root {
     --color-main: #17105e;
     --color-main-transparent: rgba(23, 16, 94, .6);
+    --color-light: #41eeee;
     --gradient: linear-gradient(to right, #41eeee, #00b3f3);
 }
 

@@ -42,9 +42,9 @@
         transition: all .15s ease-in;
     }
 
-    .arrow:hover {
+    /* .arrow:hover {
         transform: scale(1.1);
-    }
+    } */
 
     .arrowLeft::after {
         content: "◀";

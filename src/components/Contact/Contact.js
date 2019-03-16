@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Contact.module.css';
-import PageContent from '../../PageContent/PageContent';
+import PageContent from '../../containers/PageContent/PageContent';
 
 const Contact = (props) => {
     const currYear = new Date().getFullYear();
@@ -10,7 +10,7 @@ const Contact = (props) => {
                 <div className={styles.dataCont}>
                     <div className={[styles.rec, styles.recLight].join(' ')} >
                         <img
-                            src={require('../../../img/icons/phone.svg')}
+                            src={require('../../img/icons/phone.svg')}
                             alt="Phone number"
                             className={styles.icon}
                         />

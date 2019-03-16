@@ -20,6 +20,17 @@
     color: var(--color-main);
 }
 
+.solid {
+    background-color: var(--color-main);
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.active {
+    pointer-events: none;
+}
+
 .container:hover {
     justify-content: space-around;
 }

@@ -4,12 +4,17 @@
     background-color: var(--color-main);
     color: #fff;
     padding: 15px;
+    position: relative;
 }
 
 .light {
     background-image: var(--gradient);
     color: var(--color-main);
     min-height: 200px;
+}
+
+.withImg {
+    padding-bottom: 150px;
 }
 
 .headerCont {
@@ -49,6 +54,14 @@
     margin-top: 1em;
 }
 
+.img {
+    max-width: 70%;
+    max-height: 70%;
+    position: absolute;
+    bottom: -60px;
+    right: 30px;
+}
+
 @media (min-width: 768px) {
     .container {
         padding: 15px;
@@ -57,6 +70,10 @@
 
     .light {
         min-height: 250px;
+    }
+
+    .withImg {
+        padding-bottom: 150px;
     }
 
     .headerCont {

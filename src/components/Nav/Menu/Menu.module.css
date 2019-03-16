@@ -9,7 +9,7 @@
     padding: 40px;
     opacity: 0;
     transition: all .5s ease-in;
-    height: 240px;
+    min-height: 240px;
     background-color: #fff;
     z-index: 10;
 }
@@ -27,7 +27,29 @@
 }
 
 .item {
-    margin-bottom: 8px;
+    margin-bottom: 14px;
+}
+
+.item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.offerLink:hover .offerOptions {
+    max-height: 200px;
+    overflow: visible;
+    opacity: 1;
+}
+
+.offerOptions {
+    list-style: none;
+    text-transform: lowercase;
+    padding-left: 15px;
+    font-size: .8em;
+    max-height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .7s ease-out, opacity 1s ease-out;
 }
 
 @media (min-width: 768px) {
@@ -41,6 +63,8 @@
         padding: 0;
         margin: 0;
         width: 100%;
+        height: 100%;
+        min-height: auto;
     }
 
     .show {
@@ -53,12 +77,89 @@
         align-items: center;
         justify-content: space-around;
         width: 100%;
+        height: 100%;
+        background-color: #fff;
     }
 
     .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin: 0;
-        margin-left: 30px;
         font-weight: bold;
         font-size: 18px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .item a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        padding: 0 15px;
+    }
+
+    .item a:hover {
+        border-bottom-color: var(--color-light);
+    }
+
+    a.activeLink {
+        border-bottom-color: var(--color-main);
+        pointer-events: none;
+    }
+
+    .offerLink {
+        position: relative;
+    }
+
+    .offerLink:hover .offerOptions {
+        transform: translateY(100%);
+    }
+
+    .offerOptions {
+        transform: translateY(0);
+        z-index: -1;
+        overflow: visible;
+        width: 200%;
+        max-height: 180px;
+        height: 180px;
+        padding: 0;
+        padding-top: 30px;
+        background-color: #fff;
+        opacity: 1;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .offerOption {
+        position: relative;
+    }
+
+    .offerOption a {
+        justify-content: flex-start;
+    }
+
+    .offerOption:hover a {
+        border-bottom-color: transparent;
+    }
+
+    .offerOption:hover a::after {
+        content: "▶";
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--color-light);
+        animation: pulseRight .7s linear alternate infinite;
+    }
+
+    @keyframes pulseRight {
+        to {
+            transform: translate(-5px, -50%);
+        }
     }
 }

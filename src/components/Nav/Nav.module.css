@@ -43,7 +43,7 @@
 
     .navCont {
         width: 60%;
-        padding: 20px 30px;
+        padding: 0px 30px;
     }
 
     .logoCont {
@@ -61,7 +61,7 @@
         width: 60%;
         height: 2px;
         margin-top: 10px;
-        background-color: #1a1165;
+        background-color: var(--color-main);
     }
 
     .menuCont {

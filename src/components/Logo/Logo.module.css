@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: flex-end;
     font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
 }
 
 .img {

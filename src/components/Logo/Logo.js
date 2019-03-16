@@ -1,11 +1,15 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import styles from './Logo.module.css';
-import logo from '../../img/logo.png'
+import logo from '../../img/logo.png';
 
 const Logo = (props) => {
     return(
-        <div className={styles.container}>
-            <img src={logo} alt="" className={styles.img}/>
+        <div
+            className={styles.container}
+            onClick={()=>{props.history.push(`/`)}}
+        >
+            <img src={logo} alt="Domino Grupa Producent reklam" className={styles.img}/>
             <div className={styles.name__cont}>
                 <h2 className={styles.name__header}>
                     <span className={styles.name__headerBold}>Domino </span>
@@ -18,4 +22,4 @@ const Logo = (props) => {
         </div>
     );
 }
-export default Logo;
+export default withRouter(Logo);

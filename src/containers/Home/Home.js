@@ -5,7 +5,7 @@ import SymSlides from './SymSlides/SymSlides';
 import Challange from './Challange/Challange';
 import Customers from './Customers/Customers';
 import News from './News/News';
-import Contact from './Contact/Contact';
+import Contact from '../../components/Contact/Contact';
 
 const Home = (props) => {
     return(

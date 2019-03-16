@@ -5,8 +5,44 @@ import PageContent from '../../PageContent/PageContent';
 import Branch from '../../../components/Branch/Branch';
 
 const Home = (props) => {
+    const linksList = [
+        {
+            text: 'Producent reklam',
+            target: 'producent_reklam',
+        },
+        {
+            text: 'Agencja reklamowa',
+            target: 'agencja_reklamowa',
+        },
+        {
+            text: 'Montaż reklam',
+            target: 'montaz_reklam',
+        },
+        {
+            text: 'Usługi wysokościowe',
+            target: 'montaz_reklam',
+        },
+        ];
+    const linksOutput = linksList.map((link, index) => {
+        if(index+1 === linksList.length) {
+            return(
+                <Branch
+                    description = {link.text}
+                    target = {link.target}
+                    key = {link.text}
+                    light = {true}
+                />
+            )
+        }
+        return(
+            <Branch
+                description = {link.text}
+                target = {link.target}
+                key = {link.text}
+            />
+        )
+    })
     return(
-
     <div
         className={styles.container}
         style={{backgroundImage: `url(${background})`, height: window.innerHeight + 'px'}}
@@ -19,20 +55,7 @@ const Home = (props) => {
                     </h2>
                 </div>
                 <div className={styles.mainBranch}>
-                    <Branch
-                        description='Producent reklam'
-                    />
-                    <Branch
-                        description='Agencja reklamowa'
-                    />
-                    <Branch
-                        description='Montaż reklam'
-                    />
-                    <Branch
-                        description='Usługi wysokościowe'
-                        light={true}
-                    />
-
+                    {linksOutput}
                 </div>
             </div>
         </PageContent>
