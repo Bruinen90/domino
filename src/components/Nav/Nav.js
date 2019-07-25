@@ -41,6 +41,12 @@ class Nav extends Component {
                         </div>
                     </div>
                 </div>
+                {this.state.show &&
+                    <div
+                        className={styles.cover}
+                        onClick={()=>this.setState({show: false})}
+                    ></div>
+                }
             </div>
         );
     }

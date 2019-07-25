@@ -3,10 +3,25 @@ import styles from './FeaturesList.module.css';
 import Feature from './Feature/Feature';
 
 const FeaturesList = (props) => {
-    const featuresOutput = props.featuresData.map(feature => {
+    const featuresData = [
+        {
+            title: 'projekt',
+            icon: 'projekt',
+        },
+        {
+            title: 'akceptacja',
+            icon: 'akceptacja',
+        },
+        {
+            title: 'realizacja',
+            icon: 'realizacja',
+        },
+    ] 
+    const featuresOutput = featuresData.map(feature => {
         return (
             <Feature
-                title = {feature}
+                title = {feature.title}
+                icon = {feature.icon}
                 key = {feature}
             />
         )

@@ -36,6 +36,24 @@
     display: none;
 }
 
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-main-transparent);
+    z-index: -1;
+    opacity: 0;
+    animation: fadeInCover .75s ease-out forwards;
+}
+
+@keyframes fadeInCover {
+    to {
+        opacity: 1;
+    }
+}
+
 @media (min-width: 768px) {
     .container {
         height: 90px;
@@ -94,4 +112,7 @@
         font-size: 18px;
     }
 
+    .cover {
+        display: none;
+    }
 }

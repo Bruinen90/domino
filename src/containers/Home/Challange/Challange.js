@@ -18,24 +18,29 @@ const Challange = (props) => {
                     <ChallangeBlock
                         number="3409"
                         title="wykonanych liter 3D"
+                        icon="wykonanych_liter_3d"
                     />
                     <ChallangeBlock
                         number="70k"
                         title={`wydrukowanych m² bannerów`}
+                        icon="wydrukowanych_banerow"
                     />
                     <div className={styles.desktopFill}></div>
                     <ChallangeBlock
                         number="400"
                         title="realizacji na wysokości"
+                        icon="montaz_reklam"
                         moveLeft={true}
                     />
                     <ChallangeBlock
                         number="1mln"
                         title="wydrukowanych sztuk ulotek"
+                        icon="wydrukowanych_ulotek"
                     />
                     <ChallangeBlock
                         number="248"
                         title="pomalowanych dachów"
+                        icon="pomalowanych_dachow"
                     />
 
                     <div className={styles.seeMore}>

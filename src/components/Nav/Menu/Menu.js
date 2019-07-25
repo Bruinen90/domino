@@ -12,6 +12,7 @@ const Menu = (props) => {
                     <NavLink
                         to='/o_nas'
                         activeClassName={styles.activeLink}
+                        onClick={props.click}
                     >
                         o nas
                     </NavLink>
@@ -24,6 +25,7 @@ const Menu = (props) => {
                         <li className={styles.offerOption}>
                             <Link
                                 to='/producent_reklam'
+                                onClick={props.click}
                             >
                                 Producent reklam
                             </Link>
@@ -31,6 +33,7 @@ const Menu = (props) => {
                         <li className={styles.offerOption}>
                             <Link
                                 to='/agencja_reklamowa'
+                                onClick={props.click}
                             >
                                 Agencja reklamowa
                             </Link>
@@ -38,6 +41,7 @@ const Menu = (props) => {
                         <li className={styles.offerOption}>
                             <Link
                                 to='/montaz_reklam'
+                                onClick={props.click}
                             >
                                 Montaż reklam
                             </Link>
@@ -45,6 +49,7 @@ const Menu = (props) => {
                         <li className={styles.offerOption}>
                             <Link
                                 to='/montaz_reklam'
+                                onClick={props.click}
                             >
                                 Usługi wysokościowe
                             </Link>
@@ -55,6 +60,7 @@ const Menu = (props) => {
                     <NavLink
                         to='/kontakt'
                         activeClassName={styles.activeLink}
+                        onClick={props.click}
                     >
                         kontakt
                     </NavLink>

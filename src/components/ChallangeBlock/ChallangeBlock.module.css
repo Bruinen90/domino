@@ -18,9 +18,14 @@
     width: 100%;
 }
 
-.icon {
+.iconWrapper {
+    color: var(--color-light);
+}
+
+.icon svg {
     width: 35px;
     height: 35px;
+    fill: currentColor;
 }
 
 .number {
@@ -58,7 +63,7 @@
         height: 130px;
     }
 
-    .icon {
+    .icon svg {
         width: 40px;
         height: 40px;
     }
@@ -82,7 +87,7 @@
         height: 150px;
     }
 
-    .icon {
+    .icon svg {
         width: 50px;
         height: 50px;
     }

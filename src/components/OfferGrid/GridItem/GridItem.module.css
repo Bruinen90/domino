@@ -23,7 +23,12 @@
     height: 80px;
 }
 
-.icon {
+.iconWrapper {
+    color: var(--color-light);
+}
+
+.icon svg {
+    fill: currentColor;
     width: 40px;
     height: 40px;
     align-self: flex-start;
@@ -80,7 +85,7 @@
         height: 80px;
     }
 
-    .icon {
+    .icon svg {
         width: 40px;
         height: 40px;
     }

@@ -9,6 +9,7 @@ const OfferGrid = (props) => {
                 title = {item.title}
                 text = {item.text}
                 light = {item.light || props.light}
+                icon = {item.icon}
                 key = {index}
             />
         )

@@ -15,10 +15,10 @@ class App extends Component {
                     <Nav />
                     <Switch>
                         <Route path='/' exact component={Home} />
-                        <Route path='/agencja_reklamowa'  component={Agency} />
-                        <Route path='/montaz_reklam'  component={Mounting} />
-                        <Route path='/producent_reklam'  component={AdsProducer} />
-                        <Route path='/o_nas'  component={About} />
+                        <Route path='/agencja_reklamowa' component={Agency} />
+                        <Route path='/montaz_reklam' component={Mounting} />
+                        <Route path='/producent_reklam' component={AdsProducer} />
+                        <Route path='/o_nas' component={About} />
                     </Switch>
             </main>
         );
