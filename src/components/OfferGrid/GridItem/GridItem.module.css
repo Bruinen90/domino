@@ -14,7 +14,7 @@
 }
 
 .withImg {
-    padding-bottom: 150px;
+    padding-bottom: 240px;
 }
 
 .headerCont {
@@ -77,10 +77,6 @@
         min-height: 250px;
     }
 
-    .withImg {
-        padding-bottom: 150px;
-    }
-
     .headerCont {
         height: 80px;
     }
@@ -98,5 +94,12 @@
         font-size: 24px;
         line-height: 1.2em;
         letter-spacing: 2px;
+    }
+
+    .img {
+        max-width: 50%;
+        max-height: 50%;
+        bottom: -60px;
+        right: 30px;
     }
 }

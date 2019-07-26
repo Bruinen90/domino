@@ -13,39 +13,77 @@ const AdsProducer = props => {
 	const gridItems = [
 		{
 			title: "Konstrukcje reklamowe",
-			text:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?",
-            icon: "konstrukcje_reklamowe",
+			text: [
+                "konstrukcje stalowe i aluminowe",
+                "konstrukcje wolnostojące lub ścienne",
+                "konstrukcje wystawiennicze ",
+                "witryny ogłoszeniowe",
+                "tablice i szyldy reklamowe",
+                "złoacza rurowe ",
+                "kasetony reklamowe",
+            ],
+			icon: "konstrukcje_reklamowe"
 		},
 		{
 			title: "Reklamy świetlne",
-			text:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?",
-            icon: "reklamy_swietlne",
+			text: [
+                "kasetony reklamowe",
+                "tablice podświetlane",
+                "citylighty",
+                "oświetlenia LED",
+                "pylony i totemy",
+                "semafor reklamowy",
+                "neony",
+            ],
+			icon: "reklamy_swietlne"
 		},
 		{
 			title: "Litery przestrzenne",
-			text:
-				"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?",
-            icon: "wykonanych_liter_3d",
+			text: [
+                "litery przestrzenne LED",
+                "litery przestrzenne ze styroduru",
+                "litery podświetlane z plexi",
+            ],
+			icon: "wykonanych_liter_3d"
 		},
 		{
 			title: "Znakowanie obiektów",
-			text:
-				"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?",
-            icon: "montaz_reklam",
+            text: [
+                "banery reklamowe / elewacyjne / wolnostojące",
+                "wydruki wielkoformatowe",
+                "oklejamy witryny sklepowe / okna",
+                "samochody",
+                "tabliczki na drzwi",
+                "szyldy informacyjne",
+                "systemy informacji komunikacji w budynku",
+            ],
+			icon: "montaz_reklam"
 		},
 		{
 			title: "Materiały pos",
-			text:
-				"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?",
-            icon: "materialy_pos",
+			text: [
+                "podajniki na podstawki do piwa",
+                "stojaki na ulotki, stojaki na foldery reklamowe, stojaki na wizytówki, ekspozytory POS",
+                "standy reklamowe, displaye reklamowe, tablice reklamowe",
+                "stojaki reklamowe roll-up, stojaki do banerów, banery",
+                "tablice menu, menuboardy",
+                "wyspy sklepowe",
+                "naklejki, serwetniki, bilownice i inne gadżety",
+                "toppery (elementy umieszczane nad stojakiem reklamowym)",
+                "lightboxy (reklamy podświetlane, świetliki)",
+            ],
+			icon: "materialy_pos"
 		},
 		{
 			title: "Stoiska wystawiennicze",
-			text:
-				"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?",
-            icon: "wystawiennicze",
+			text: [
+                "Kostki reklamowe",
+                "Stoiska promocyjne",
+                "Stoiska targowe",
+                "Ścianki banerowe",
+                "Ścianki tekstylne",
+            ],
+			icon: "wystawiennicze"
 		}
 	];
 	return (
@@ -58,7 +96,7 @@ const AdsProducer = props => {
 			<PageContent>
 				<Header text="Od projektu do montażu" />
 				<TextWithButton
-					text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta temporibus suscipit facere, inventore, laudantium porro! Molestiae maiores, dignissimos id neque. Esse aliquid at voluptatem a, sapiente dicta dignissimos velit nemo culpa tempore aspernatur neque, quasi, mollitia fuga perferendis! Quo dicta necessitatibus ducimus temporibus, sint omnis natus officia unde reiciendis provident!"
+					text="Od ponad 10 lat zajmujemy się projektowaniem oraz produkcją wraz z montażem szerokiej gamy reklam. Nasze doświadczenie pomaga w doborze odpowiedniego nośnika. Na pierwszym miejscu stawiamy na jakość tak, aby klient był zadowolony. Montujemy reklamy, oklejamy na terenie całej Polski, mimo, że siedziba znajduję się w Bieszczadach."
 					button="Skontaktuj się z nami"
 				/>
 				<OfferGrid gridItems={gridItems} />

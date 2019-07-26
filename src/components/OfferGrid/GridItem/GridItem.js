@@ -5,6 +5,16 @@ import iconLight from "../../../img/icons/bilboardLight.png";
 import ReactSVG from "react-svg";
 
 const GridItem = props => {
+    let textOutput = props.text;
+    if(Array.isArray(textOutput)) {
+        textOutput = textOutput.map(listItem => {
+            return(
+                <li className={styles.listItem}>
+                    {listItem}
+                </li>
+            )
+        });
+    } 
 	return (
 		<div
 			className={[
@@ -23,7 +33,9 @@ const GridItem = props => {
 				<div className={styles.line} />
 				<h3 className={styles.header}>{props.title}</h3>
 			</div>
-			<div className={styles.text}>{props.text}</div>
+            <div className={styles.text}>
+                {textOutput}
+            </div>
 			{props.img && (
 				<img
 					src={require(`../../../img/${props.img}`)}

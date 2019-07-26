@@ -1,65 +1,80 @@
-import React from 'react';
-import styles from './Mounting.module.css';
-import Hero from '../../components/Hero/Hero';
-import PageContent from '../PageContent/PageContent';
-import Header from '../../components/Header/Header';
-import TextWithButton from '../../components/TextWithButton/TextWithButton';
-import PhotosGrid from '../../components/PhotosGrid/PhotosGrid';
-import OfferLinks from '../../components/OfferLinks/OfferLinks';
-import Contact from '../../components/Contact/Contact';
-import SideBySide from '../../components/SideBySide/SideBySide';
+import React from "react";
+import styles from "./Mounting.module.css";
+import Hero from "../../components/Hero/Hero";
+import PageContent from "../PageContent/PageContent";
+import Header from "../../components/Header/Header";
+import TextWithButton from "../../components/TextWithButton/TextWithButton";
+import PhotosGrid from "../../components/PhotosGrid/PhotosGrid";
+import OfferLinks from "../../components/OfferLinks/OfferLinks";
+import Contact from "../../components/Contact/Contact";
+import SideBySide from "../../components/SideBySide/SideBySide";
 
-const Mounting = (props) => {
-    const sideBySideData = [
-        {
-            title: 'Montaż reklam',
-            text: <div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia maxime dolor ipsum totam laborum laboriosam adipisci doloremque dicta quae dignissimos eligendi asperiores veritatis impedit ipsam architecto obcaecati, minima, id quod.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus excepturi illum necessitatibus, voluptatibus quisquam minima voluptatum natus sunt asperiores.
-                    </p>
-                </div>
-        },
-        {
-            title: 'Usługi zwyżką',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, consectetur. Inventore blanditiis veniam consequatur, recusandae temporibus, doloribus. Vero, animi fugiat excepturi in quidem optio maxime. Dolores harum tenetur possimus itaque facere nesciunt, reprehenderit magnam? Obcaecati adipisci cumque ut reprehenderit enim.',
-            img: 'zwyzka.png'
-        },
+const Mounting = props => {
+	const sideBySideData = [
+		{
+			title: "Montaż reklam",
+			text: (
+				<div>
+					Montujemy wszystko to, co wyprodukujemy nie tylko na terenie
+					Bieszczad, ale w każdym miejscu zleconym przez Klienta – od
+					prostych banerów, większych siatek wielkoformatowych,
+					poprzez kasetony, litery przestrzenne, tablice, czy
+					wolno-stojące pylony, billboardy. <br />
+					Wyklejamy powierzchnie różnymi foliami – przeprowadzając
+					kampanie oklejania placówek w całej Polsce przy
+					wykorzystaniu kilku ekip montażowych. <br />
+					Oklejamy floty transportowe u Klienta jak i w siedzibie
+					naszej firmy.
+					<br />
+					Dostarczamy towar we wskazane miejsce lub wysyłamy za
+					pośrednictwem firmy kurierskiej.
+				</div>
+			)
+		},
+		{
+			title: "Usługi zwyżką",
+			text: (
+				<div>
+					Wykonujemy szeroki zakres usług wysokościowych. Wieloletnie
+					doświadczenie i wiedza w zakresie prac wysokościowych
+					sprawia, że podejmujemy się skomplikowanych i wymagających
+					zleceń. Naszą najlepszą reklamą są referencje i ciągle
+					powiększające się grono klientów zadowolonych z naszych
+					usług. <br />
+					Nasza doświadczona kadra świetnie sprawdzi się w każdej
+					pracy na wysokości, gdzie utrudniony jest dostęp. Pomożemy
+					Ci załatać ubytki w elewacji, usunąć usterkę, wyczyścić
+					rynny, umyć elewację, pomalować dach, przyciąc drzewo
+				</div>
+			),
+			img: "zwyzka.png"
+		}
+	];
+	return (
+		<div className={styles.container}>
+			<Hero
+				mainHeader="Montaż reklam usługi zwyżką"
+				lightTitle="Jak działamy?"
+				featuresList={["projekt", "akceptacja", "realizacja"]}
+			/>
+			<PageContent>
+				<TextWithButton
+					text="Wiedza, pracowitość, elastyczność – to domena naszej marki, która układa się jak domino i wszystko musi pasować. 
+                    Doświadczenie, rezolutność, dyscyplina – to domeny zespołu pracowników.
+                    Takie połączenie od 2009 roku skutkuje wieloma sukcesami, miłą atmosferą oraz bogatym portfelem zadowolonych Klientów
+                    "
+					button="Skontaktuj się z nami"
+				/>
 
-    ]
-    return(
-        <div className={styles.container}>
-            <Hero
-                mainHeader = "Montaż reklam usługi zwyżką"
-                lightTitle = "Jak działamy?"
-                featuresList = {['projekt', 'akceptacja', 'realizacja']}
-            />
-            <PageContent>
-                <TextWithButton
-                    text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta temporibus suscipit facere, inventore, laudantium porro! Molestiae maiores, dignissimos id neque. Esse aliquid at voluptatem a, sapiente dicta dignissimos velit nemo culpa tempore aspernatur neque, quasi, mollitia fuga perferendis! Quo dicta necessitatibus ducimus temporibus, sint omnis natus officia unde reiciendis provident!"
-                    button = "Skontaktuj się z nami"
-                />
+				<SideBySide data={sideBySideData} />
 
-                <SideBySide
-                    data = {sideBySideData}
-                />
-
-                <Header
-                    text = "Wybrane realizacje"
-                />
-                <PhotosGrid
-                    folderName= "Mounting"
-                    photosCount = {6}
-                />
-                <OfferLinks
-                    active = "montaz_reklam"
-                />
-                <Contact />
-            </PageContent>
-        </div>
-    );
+				<Header text="Wybrane realizacje" />
+				<PhotosGrid folderName="Mounting" photosCount={6} />
+				<OfferLinks active="montaz_reklam" />
+				<Contact />
+			</PageContent>
+		</div>
+	);
 };
 
 export default Mounting;

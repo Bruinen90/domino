@@ -13,32 +13,76 @@ const Agency = props => {
 	const gridItems = [
 		{
 			title: "Druk wielkoformatowy",
-			text:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?",
+			text: [
+                "Banery na budynki, płoty - banery, siatki mesh",
+                "Reklamy na witryny sklepowe – folie zwykłe i One Way Vision",
+                "Billboard’y i plakaty uliczne – papier blubeck",
+                "Naklejki – folie, folie samoprzylepne, folie ",
+                "Plakaty - papier 140g, 200g",
+                "Powiększenia fotografii - papier foto 230g",
+                "Reklamy na pojazdach - folie magnetyczne, folie samoprzylepne wylewane",
+                "Tapety ścienne",
+                "Wydruk zdjęć na płótnie - blejtramy",
+                "Reklamy podświetlane do kasetonów - folie do podświetleń, banery do podświetleń",
+
+            ],
             icon: "druk_wielkoformatowy",
 		},
 		{
 			title: "Druk UV, cyfrowy",
-			text:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?",
+			text: [
+                "Plansze reklamowe - szyldy, druk na płytach PCV",
+                "Druk na szkle (np. do wystroju wnętrz)",
+                "Druk na płytach CD",
+                "Wydruki niskonakładowe",
+                "Bilety",
+            ],
             icon: "druk_cyfrowy"
 		},
 		{
 			title: "Druk offsetowy",
-			text:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?",
+			text: [
+                "wizytówki ",
+                "ulotki",
+                "katalogi",
+                "kalendarze",
+                "teczki ",
+                "papiery firmowe",
+                "notesy",
+                "broszury ",
+            ],
             icon: "druk_offsetowy",
 		},
 		{
 			title: "Matriały reklamowe ",
-			text:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?",
+			text: [
+                "Znakujemy odzież ",
+                "potykacze",
+                "flagi, bumpery",
+                "roll-upy",
+                "materiały POS ",
+                "stoiska targowe",
+                "notesy",
+                "torby reklamowe",
+                "standy reklamowe",
+                "horeca - materiały dla gastronomii i hoteli",
+                "słodycze reklamowe ",
+            ],
             icon: "materialy_reklamowe",
 		},
 		{
 			title: "Gadżety reklamowe",
-			text:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?",
+			text: [
+                "dlugopisy",
+                "breloki",
+                "otwieracze ",
+                "klipsy magentyczne",
+                "buttony, piny",
+                "mini flagi",
+                "piłki plażowe",
+                "kubki",
+                "i wiele, wiele innych",
+            ],
             icon: 'gadzety',
 		}
 	];
@@ -46,19 +90,19 @@ const Agency = props => {
 		{
 			title: "Marketing online",
 			text:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?",
+                "Wspieramy naszych klientów w biznesie. Zapewniamy pełną obsługę e-marketingową, pomagamy ich markom zdobywać uznanie i wyprzedzać konkurencję!",
             icon: 'marketing_online',
 		},
 		{
 			title: "Branding care",
 			text:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?",
+                "Realizujemy kompleksowe zadania związane z kreowaniem logo, tworzeniem identyfikacji wizualnej i opracowaniu zasad komunikacji graficznej.",
             icon: 'agencja_reklamowa'
 		},
 		{
 			title: "Projektowanie graficzne",
 			text:
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto voluptatum explicabo hic, nihil ullam quas ipsum dicta magnam eius?",
+                "Zajmujemy się projektowaniem graficznym, tworzeniem reklam i nośników wizerunkowych na potrzeby druku, Internetu, jak również na potrzeby filmowe.",
             icon: "projekowanie_graficzne"
 		}
 	];
@@ -72,7 +116,11 @@ const Agency = props => {
 			<PageContent>
 				<Header text="Od projektu po realizacje" />
 				<TextWithButton
-					text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta temporibus suscipit facere, inventore, laudantium porro! Molestiae maiores, dignissimos id neque. Esse aliquid at voluptatem a, sapiente dicta dignissimos velit nemo culpa tempore aspernatur neque, quasi, mollitia fuga perferendis! Quo dicta necessitatibus ducimus temporibus, sint omnis natus officia unde reiciendis provident!"
+					text={<React.Fragment><p>Jesteśmy agencją reklamową full service. Od 10  lat na rynku. 
+                    Najpierw słuchamy, następnie dyskutujemy, potem działamy.
+                    </p><p>
+                    Powiedz nam czego oczekujesz, a my zajmiemy się resztą - zaawansowane projekty graficzne, instalacje reklamowe, wydruki wielkoformatowe lub kampanie reklamowe na zlecenie - to tylko część działań, które realizujemy każdego dnia. </p>
+                    </React.Fragment>}
 					button="Skontaktuj się z nami"
 				/>
 				<OfferGrid gridItems={gridItems} />
