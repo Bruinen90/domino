@@ -13,7 +13,8 @@ const About = props => {
 			<Hero
 				mainHeader="O nas"
 				lightTitle="Jak działamy?"
-				featuresList={["projekt", "akceptacja", "realizacja"]}
+                featuresList={["projekt", "akceptacja", "realizacja"]}
+                img="o_nas"
 			/>
 			<PageContent>
 				<Header

@@ -111,7 +111,8 @@ const Agency = props => {
 			<Hero
 				mainHeader="Agencja reklamowa 360°"
 				lightTitle="Jak działamy?"
-				featuresList={["projekt", "akceptacja", "realizacja"]}
+                featuresList={["projekt", "akceptacja", "realizacja"]}
+                img="agencja_360"
 			/>
 			<PageContent>
 				<Header text="Od projektu po realizacje" />

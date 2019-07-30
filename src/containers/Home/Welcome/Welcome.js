@@ -20,7 +20,8 @@ const Home = (props) => {
         },
         {
             text: 'Usługi wysokościowe',
-            target: 'koszowy',
+            target: 'montaz_reklam',
+            icon: 'koszowy'
         },
         ];
     const linksOutput = linksList.map((link, index) => {
@@ -31,6 +32,7 @@ const Home = (props) => {
                     target = {link.target}
                     key = {link.text}
                     light = {true}
+                    icon = {link.icon}
                 />
             )
         }

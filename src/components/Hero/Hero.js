@@ -5,13 +5,14 @@ import PageContent from '../../containers/PageContent/PageContent';
 import FeaturesList from './FeaturesList/FeaturesList';
 
 const Hero = (props) => {
+    const backgroundImg = require(`../../img/backgrounds/${props.img}.jpg`);
     return(
         <div
             className={styles.container}
             style={{
-                backgroundImage: `url(${background})`,
+                backgroundImage: `url(${backgroundImg})`,
                 height: window.innerWidth < 769 ? window.innerHeight + 'px' :
-                        '80vh'
+                    window.innerHeight - 50 + 'px'
             }}
         >
             <PageContent>

@@ -91,7 +91,8 @@ const AdsProducer = props => {
 			<Hero
 				mainHeader="Producent reklam wysoka jakość"
 				lightTitle="Jak działamy?"
-				featuresList={["projekt", "akceptacja", "realizacja"]}
+                featuresList={["projekt", "akceptacja", "realizacja"]}
+                img="producent_reklam"
 			/>
 			<PageContent>
 				<Header text="Od projektu do montażu" />

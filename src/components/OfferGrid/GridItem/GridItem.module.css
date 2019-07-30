@@ -55,7 +55,8 @@
 }
 
 .text {
-    line-height: 1.3em;
+    font-size: 1.15rem;
+    line-height: 1.65em;
     margin-top: 1em;
 }
 

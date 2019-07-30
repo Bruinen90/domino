@@ -5,7 +5,6 @@ const PhotosGrid = (props) => {
     const photosOutput = [];
     for(let i = 1; i <= props.photosCount; i++) {
         const url = require(`../../img/photos/agency/${i}.JPG`);
-        console.log(url)
         photosOutput.push(
             <div
                 style={{backgrounImage: `url(${url})`}}

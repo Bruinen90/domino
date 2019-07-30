@@ -6,6 +6,8 @@ import Agency from '../Agency/Agency';
 import Mounting from '../Mounting/Mounting';
 import AdsProducer from '../AdsProducer/AdsProducer';
 import About from '../About/About';
+import ContactPage from '../ContactPage/ContactPage';
+
 import { Switch, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -19,6 +21,7 @@ class App extends Component {
                         <Route path='/montaz_reklam' component={Mounting} />
                         <Route path='/producent_reklam' component={AdsProducer} />
                         <Route path='/o_nas' component={About} />
+                        <Route path='/kontakt' component={ContactPage} />
                     </Switch>
             </main>
         );

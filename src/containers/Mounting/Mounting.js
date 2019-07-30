@@ -55,7 +55,8 @@ const Mounting = props => {
 			<Hero
 				mainHeader="Montaż reklam usługi zwyżką"
 				lightTitle="Jak działamy?"
-				featuresList={["projekt", "akceptacja", "realizacja"]}
+                featuresList={["projekt", "akceptacja", "realizacja"]}
+                img="montaz_reklam"
 			/>
 			<PageContent>
 				<TextWithButton

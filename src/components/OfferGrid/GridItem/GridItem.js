@@ -5,16 +5,16 @@ import iconLight from "../../../img/icons/bilboardLight.png";
 import ReactSVG from "react-svg";
 
 const GridItem = props => {
-    let textOutput = props.text;
-    if(Array.isArray(textOutput)) {
-        textOutput = textOutput.map(listItem => {
-            return(
-                <li className={styles.listItem}>
-                    {listItem}
-                </li>
-            )
-        });
-    } 
+	let textOutput = props.text;
+	if (Array.isArray(textOutput)) {
+		textOutput = textOutput.map(listItem => {
+			return (
+				<li className={styles.listItem} key={listItem}>
+					{listItem}
+				</li>
+			);
+		});
+	}
 	return (
 		<div
 			className={[
@@ -24,7 +24,7 @@ const GridItem = props => {
 			].join(" ")}
 		>
 			<div className={styles.headerCont}>
-				<div style={{color: props.light ? '#17105e' : '#41eeee'}}>
+				<div style={{ color: props.light ? "#17105e" : "#41eeee" }}>
 					<ReactSVG
 						src={require(`../../../img/icons/${props.icon}.svg`)}
 						className={styles.icon}
@@ -33,9 +33,7 @@ const GridItem = props => {
 				<div className={styles.line} />
 				<h3 className={styles.header}>{props.title}</h3>
 			</div>
-            <div className={styles.text}>
-                {textOutput}
-            </div>
+			<div className={styles.text}>{textOutput}</div>
 			{props.img && (
 				<img
 					src={require(`../../../img/${props.img}`)}

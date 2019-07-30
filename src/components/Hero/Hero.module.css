@@ -9,6 +9,17 @@
     margin-bottom: 120px;
 }
 
+.container:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: var(--color-main-transparent);
+    z-index: -1;
+}
+
 .headerCont {
     text-transform: uppercase;
     color: #fff;

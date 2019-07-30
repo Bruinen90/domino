@@ -22,7 +22,7 @@ const FeaturesList = (props) => {
             <Feature
                 title = {feature.title}
                 icon = {feature.icon}
-                key = {feature}
+                key = {feature.title}
             />
         )
     })

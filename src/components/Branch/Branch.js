@@ -7,8 +7,8 @@ import styles from "./Branch.module.css";
 import Button from "../Button/Button";
 
 const Branch = props => {
-	const icon = require(`../../img/icons/${props.target}.svg`);
-	const contClasses = [styles.container];
+    const iconUrl = props.icon ? props.icon : props.target;
+	const icon = require(`../../img/icons/${iconUrl}.svg`);
 	return (
 		<div
 			className={[
