@@ -128,7 +128,7 @@ const Agency = props => {
 				<OfferGrid gridItems={lightGridItems} light={true} />
 
 				<Header text="Wybrane realizacje" />
-				<PhotosGrid folderName="agency" photosCount={6} />
+				<PhotosGrid imgPrefix="producent_reklam" photosCount={6} />
 				<OfferLinks active="agencja_reklamowa" />
 				<Contact />
 			</PageContent>

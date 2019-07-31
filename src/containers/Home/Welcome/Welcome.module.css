@@ -5,6 +5,18 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 60px;
+    position: relative;
+}
+
+.container:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: var(--color-main-transparent);
+    z-index: 0;
 }
 
 .content {
@@ -14,6 +26,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    z-index: 2;
     /* align-items: center; */
 }
 

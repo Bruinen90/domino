@@ -19,7 +19,7 @@ const OfferLinks = (props) => {
         },
         {
             text: 'Usługi wysokościowe',
-            target: 'montaz_reklam',
+            target: 'uslugi_zwyzka',
         },
         ];
     const linksOutput = linksList.map(link => {

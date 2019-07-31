@@ -4,6 +4,7 @@
     background-color: var(--color-main);
     color: #fff;
     padding: 15px;
+    padding-bottom: 25px;
     position: relative;
 }
 
@@ -76,6 +77,10 @@
 
     .light {
         min-height: 250px;
+    }
+
+    .withImg {
+        padding-bottom: 240px;
     }
 
     .headerCont {

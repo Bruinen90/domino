@@ -5,7 +5,8 @@ import PageContent from '../../containers/PageContent/PageContent';
 import FeaturesList from './FeaturesList/FeaturesList';
 
 const Hero = (props) => {
-    const backgroundImg = require(`../../img/backgrounds/${props.img}.jpg`);
+    let backgroundImg = require(`../../img/backgrounds/${props.img}.jpg`);
+    window.innerWidth < 768 && (backgroundImg = require(`../../img/backgrounds/mobile/${props.img}.jpg`));
     return(
         <div
             className={styles.container}

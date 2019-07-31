@@ -9,20 +9,20 @@ const ContactPage = props => {
 	return (
 		<div className={styles.container}>
 			<Hero
-				mainHeader="Kontakt"
+				mainHeader="Skontaktuj się z nami"
 				lightTitle="Jak działamy?"
                 featuresList={["projekt", "akceptacja", "realizacja"]}
-                img="home"
+                img="kontakt"
 			/>
 			<PageContent>
 				<Header
 					text={
 						<React.Fragment>
-							Zapraszamy do współpracy<br />
-							skontaktuj się z nami telefonicznie lub mailowo
+							Zapraszamy do kontaktu
 						</React.Fragment>
 					}
-					wide={true}
+                    wide={false}
+                    bottomMargin={true}
 				/>
 
 				<Contact />

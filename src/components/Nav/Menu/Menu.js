@@ -48,7 +48,7 @@ const Menu = (props) => {
                         </li>
                         <li className={styles.offerOption}>
                             <Link
-                                to='/montaz_reklam'
+                                to='/uslugi_zwyzka'
                                 onClick={props.click}
                             >
                                 Usługi wysokościowe

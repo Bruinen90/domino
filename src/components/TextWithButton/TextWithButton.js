@@ -6,7 +6,7 @@ const TextWithButton = (props) => {
     return(
         <div className={styles.container}>
             <div className={styles.text}>
-                {props.text}
+                <p>{props.text}</p>
             </div>
             <div className={styles.buttonCont}>
                 <Button

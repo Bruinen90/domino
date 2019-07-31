@@ -103,7 +103,7 @@ const AdsProducer = props => {
 				<OfferGrid gridItems={gridItems} />
 
 				<Header text="Wybrane realizacje" />
-				<PhotosGrid folderName="AdsProducer" photosCount={6} />
+				<PhotosGrid imgPrefix="producent_reklam" photosCount={12} />
 				<OfferLinks active="producent_reklam" />
 				<Contact />
 			</PageContent>

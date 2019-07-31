@@ -15,7 +15,7 @@ const Contact = props => {
 							className={styles.icon}
 						/>
 						<div className={styles.text}>
-							Lorem ipsum dolor sit amet.
+							Zapraszamy do współpracy.
 						</div>
 						<div className={styles.line} />
 						<h2 className={styles.phone}>

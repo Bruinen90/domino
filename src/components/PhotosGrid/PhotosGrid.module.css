@@ -9,11 +9,14 @@
     width: 100%;
     min-height: 460px;
     background-color: #999;
+    background-size: cover;
+    background-position: center;
 }
 
 @media (min-width: 768px) {
     .container {
         grid-template: 1fr 1fr / 1fr 1fr 1fr;
+        grid-gap: 15px;
     }
 
     .centerCol {

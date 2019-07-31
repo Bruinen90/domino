@@ -53,7 +53,7 @@ const Mounting = props => {
 	return (
 		<div className={styles.container}>
 			<Hero
-				mainHeader="Montaż reklam usługi zwyżką"
+				mainHeader="Montaż reklam"
 				lightTitle="Jak działamy?"
                 featuresList={["projekt", "akceptacja", "realizacja"]}
                 img="montaz_reklam"
@@ -70,7 +70,7 @@ const Mounting = props => {
 				<SideBySide data={sideBySideData} />
 
 				<Header text="Wybrane realizacje" />
-				<PhotosGrid folderName="Mounting" photosCount={6} />
+				<PhotosGrid imgPrefix="montaz_reklam" photosCount={11} />
 				<OfferLinks active="montaz_reklam" />
 				<Contact />
 			</PageContent>
