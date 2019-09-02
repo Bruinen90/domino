@@ -98,7 +98,8 @@ const AdsProducer = props => {
 				<Header text="Od projektu do montażu" />
 				<TextWithButton
 					text="Od ponad 10 lat zajmujemy się projektowaniem oraz produkcją wraz z montażem szerokiej gamy reklam. Nasze doświadczenie pomaga w doborze odpowiedniego nośnika. Na pierwszym miejscu stawiamy na jakość tak, aby klient był zadowolony. Montujemy reklamy, oklejamy na terenie całej Polski, mimo, że siedziba znajduję się w Bieszczadach."
-					button="Skontaktuj się z nami"
+                    button="Skontaktuj się z nami"
+                    buttonTarget='kontakt'
 				/>
 				<OfferGrid gridItems={gridItems} />
 

@@ -20,7 +20,7 @@ const GridItem = props => {
 			className={[
 				styles.container,
 				props.light && styles.light,
-				props.img && styles.withImg
+				// props.img && styles.withImg
 			].join(" ")}
 		>
 			<div className={styles.headerCont}>
@@ -34,13 +34,13 @@ const GridItem = props => {
 				<h3 className={styles.header}>{props.title}</h3>
 			</div>
 			<div className={styles.text}>{textOutput}</div>
-			{props.img && (
+			{/* {props.img && (
 				<img
 					src={require(`../../../img/${props.img}`)}
 					alt={props.imgAlt}
 					className={styles.img}
 				/>
-			)}
+			)} */}
 		</div>
 	);
 };

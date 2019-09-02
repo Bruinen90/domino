@@ -11,6 +11,7 @@ const TextWithButton = (props) => {
             <div className={styles.buttonCont}>
                 <Button
                     caption = {props.button}
+                    target={props.buttonTarget}
                     // width = {60}
                     dark = {true}
                 />

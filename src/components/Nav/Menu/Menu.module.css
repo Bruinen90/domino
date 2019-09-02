@@ -50,7 +50,7 @@
     max-height: 0px;
     opacity: 0;
     overflow: hidden;
-    transition: all .7s ease-out, opacity 1s ease-out;
+    transition: all .33s ease-out, opacity 1s ease-out;
     /* Deleting animation */
     max-height: 200px;
     overflow: visible;

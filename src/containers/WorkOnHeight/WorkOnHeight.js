@@ -68,7 +68,8 @@ const WorkOnHeight = props => {
                     Doświadczenie, rezolutność, dyscyplina – to domeny zespołu pracowników.
                     Takie połączenie od 2009 roku skutkuje wieloma sukcesami, miłą atmosferą oraz bogatym portfelem zadowolonych Klientów
                     "
-					button="Skontaktuj się z nami"
+                    button="Skontaktuj się z nami"
+                    buttonTarget='kontakt'
 				/>
 
 				<SideBySide data={sideBySideData} />

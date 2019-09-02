@@ -36,9 +36,9 @@ class Nav extends Component {
                     </div>
                     <div className={styles.telCont}>
                         <div className={styles.wideLine}></div>
-                        <div className={styles.phone}>
-                            TEL. 796 720 034
-                        </div>
+                        <a href="tel: 793 760 997" className={styles.phone}>
+                            TEL. 793 760 997
+                        </a>
                     </div>
                 </div>
                 {this.state.show &&

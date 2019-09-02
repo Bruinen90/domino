@@ -122,7 +122,8 @@ const Agency = props => {
                     </p><p>
                     Powiedz nam czego oczekujesz, a my zajmiemy się resztą - zaawansowane projekty graficzne, instalacje reklamowe, wydruki wielkoformatowe lub kampanie reklamowe na zlecenie - to tylko część działań, które realizujemy każdego dnia. </p>
                     </React.Fragment>}
-					button="Skontaktuj się z nami"
+                    button="Skontaktuj się z nami"
+                    buttonTarget='kontakt'
 				/>
 				<OfferGrid gridItems={gridItems} />
 				<OfferGrid gridItems={lightGridItems} light={true} />

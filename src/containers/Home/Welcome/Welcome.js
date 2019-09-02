@@ -19,7 +19,7 @@ const Welcome = props => {
 		},
 		{
 			text: "Usługi wysokościowe",
-			target: "montaz_reklam",
+			target: "uslugi_zwyzka",
 			icon: "koszowy"
 		}
 	];

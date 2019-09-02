@@ -37,7 +37,7 @@ const About = props => {
 						portfelem zadowolonych Klientów
 					</p>
 					<div className={styles.buttonCont}>
-						<Button caption="Skontaktuj się z nami" dark={true} />
+						<Button caption="Skontaktuj się z nami" dark={true} target='kontakt' />
 					</div>
 					<p>
 						<b>Jesteśmy agencją 360.</b> To program zarządzania marką.
