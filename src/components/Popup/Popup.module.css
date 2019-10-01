@@ -24,7 +24,8 @@
 .container {
     position: relative;
     z-index: 150;
-    margin-top: -20%;
+    margin-top: -60px;
+    width: 100%;
 }
 
 .img {
@@ -46,4 +47,10 @@
 
 .closeIcon {
     width: 70%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
 }

@@ -14,7 +14,7 @@ import { Switch, Route } from 'react-router-dom';
 class App extends Component {
     state = {
         popUpVisible: false,
-        popUpImgNum: Math.ceil(Math.random()*2)
+        // popUpImgNum: Math.ceil(Math.random()*2)
     }
 
     componentWillMount() {
